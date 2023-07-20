@@ -69,7 +69,7 @@
         <a href="https://api.whatsapp.com/send?phone=5562993362090" target="_blank" rel="noopener noreferrer" class="redewpp">Whatsapp</a>
         <h2>Outros Repositorios</h2>
         <ul>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">HTML5-CSS3</a></li>
+            <li><a href="https://carloseduardolsouza.github.io/HTML5-CSS3/" target="_blank" rel="noopener noreferrer">HTML5-CSS3</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">PHP</a></li>
         </ul>
     </div>
