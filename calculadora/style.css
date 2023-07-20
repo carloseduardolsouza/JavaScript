@@ -10,6 +10,34 @@ main {
     border-radius: 5px;
 }
 
+h2 {
+    display: inline;
+}
+
+input.escolha {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+div.elemento {
+    display: inline-block;
+}
+
+div#res {
+    display: inline-block;
+    margin: 8px;
+}
+
+p.result {
+    display: inline-block;
+}
+
+input.numero {
+    margin-top: 5px;
+}
+
 footer {
     text-align: center;
 }
