@@ -1,0 +1,48 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgb(165, 165, 255) , rgb(66, 66, 255));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+div.viewport {
+    background-color: rgb(230, 230, 230);
+    height: 30px;
+    border: 3px solid black;
+    margin: 10px;
+    font-size: 25px;
+    padding: 3px;
+}
+
+main {
+    background-color: white;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+input.butt {
+    height: 50px;
+    width: 50px;
+}
+
+input.butti {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}

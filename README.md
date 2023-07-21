@@ -59,6 +59,7 @@
             <li><a href="calculadora/index.html" target="_blank" rel="noopener noreferrer">Prjeto Calculadora</a></li>
             <li><a href="sitema de multas/index.html" target="_blank" rel="noopener noreferrer">Projeto Sistema de multas[Detran]</a></li>
             <li><a href="analise de numeros/index.html" target="_blank" rel="noopener noreferrer">Projeto Analise De Numeros</a></li>
+            <li><a href="calculadora-dinamica/index.html" target="_blank" rel="noopener noreferrer">Projeto Calculadora Dinamica</a></li>
         </ul>
         
         <h2>Projetos parados</h2>
