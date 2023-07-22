@@ -14,7 +14,6 @@ let buttdiv = document.getElementById('buttdiv')
 let buttma = document.getElementById('buttma')
 let buttig = document.getElementById('buttig')
 let buttCE = document.getElementById('buttCE')
-let valores = []
 let viewport = document.getElementById('viewport')
 butt1.addEventListener('click' , nu1)
 butt2.addEventListener('click' , nu2)
@@ -84,7 +83,7 @@ function nu0() {
 }
 
 function vezes() {
-    viewport.innerHTML += (' x ')
+    viewport.innerHTML += (' * ')
 }
 
 function menos() {
@@ -92,7 +91,7 @@ function menos() {
 }
 
 function divisao() {
-    viewport.innerHTML += (' ÷ ')
+    viewport.innerHTML += (' / ')
 }
 
 function mais() {
@@ -100,18 +99,10 @@ function mais() {
 }
 
 function igual() {
-    if(valores.length == 0) {
-        window.alert('Digite algum valor')
-    } else {
-        let soma = 0
-        for(let pos in valores) {
-            soma += valores[pos]
-        }
-        viewport.innerHTML = soma
-    }
+    let result = document.getElementById('viewport').innerHTML
+    viewport.innerHTML = eval(result)
 }
 
 function apagar() {
-    valores.length = 0
     viewport.innerHTML = ``
 }

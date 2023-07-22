@@ -14,7 +14,7 @@ h1 {
     text-align: center;
 }
 
-div.viewport {
+p.viewport {
     background-color: rgb(230, 230, 230);
     height: 30px;
     border: 3px solid black;
