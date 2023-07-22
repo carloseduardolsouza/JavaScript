@@ -33,13 +33,32 @@ main {
 }
 
 input.butt {
+
+    border: 0px;
+    border-radius: 50%;
+    margin: 3px;
     height: 50px;
     width: 50px;
 }
 
+input.butt:hover {
+    transition: .5s;
+    background-color: rgb(167, 167, 167);
+}
+
 input.butti {
+    border: 0px;
+    margin: 3px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(255, 125, 125);
     width: 50px;
     height: 50px;
+}
+
+input.butti:hover {
+    transition: .5s;
+    background-color: rgb(255, 75, 75);
 }
 
 footer {

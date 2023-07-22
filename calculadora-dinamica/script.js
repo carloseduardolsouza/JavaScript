@@ -84,31 +84,30 @@ function nu0() {
 }
 
 function vezes() {
-    viewport.innerHTML += ('x')
+    viewport.innerHTML += (' x ')
 }
 
 function menos() {
-    viewport.innerHTML += ('-')
+    viewport.innerHTML += (' - ')
 }
 
 function divisao() {
-    viewport.innerHTML += ('÷ ')
+    viewport.innerHTML += (' ÷ ')
 }
 
 function mais() {
-    viewport.innerHTML += ('+')
+    viewport.innerHTML += (' + ')
 }
 
 function igual() {
     if(valores.length == 0) {
         window.alert('Digite algum valor')
     } else {
-    
-    let soma = 0
-    for(let pos in valores) {
-        soma += valores[pos]
-    }
-    viewport.innerHTML = soma
+        let soma = 0
+        for(let pos in valores) {
+            soma += valores[pos]
+        }
+        viewport.innerHTML = soma
     }
 }
 
