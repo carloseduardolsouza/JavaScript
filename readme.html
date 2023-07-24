@@ -60,6 +60,7 @@
             <li><a href="sitema de multas/index.html" target="_blank" rel="noopener noreferrer">Projeto Sistema de multas[Detran]</a></li>
             <li><a href="analise de numeros/index.html" target="_blank" rel="noopener noreferrer">Projeto Analise De Numeros</a></li>
             <li><a href="calculadora-dinamica/index.html" target="_blank" rel="noopener noreferrer">Projeto Calculadora Dinamica</a></li>
+            <li><a href="jogo-mario/index.html" target="_blank" rel="noopener noreferrer">Mario jump [JOGO]</a></li>
         </ul>
         
         <h2>Projetos parados</h2>
