@@ -4,7 +4,6 @@ document.addEventListener('click' , jump)
 let loop = setInterval(() => {
     let pipePosition = pipe.offsetLeft
     let marioPosition = +window.getComputedStyle(mario).bottom.replace('px' , '')
-    console.log(pipePosition)
     if (pipePosition <= 80 && pipePosition > 0 && marioPosition < 60) {
         pipe.style.animation = 'nome'
         pipe.style.left = `${pipePosition}px`
