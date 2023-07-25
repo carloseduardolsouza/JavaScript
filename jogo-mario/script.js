@@ -1,12 +1,17 @@
-let mario = document.querySelector('.mario-animed')
-let pipe = document.querySelector('.pipe-animed')
+let mario = document.querySelector('.mario-inicial')
+let pipe = document.querySelector('.pipe-inicial')
 let gameover = document.querySelector('.sumir')
 let novamente = document.querySelector('#novo')
 let score = document.querySelector('.pont')
 let overpontos = document.querySelector('.realpont')
-document.addEventListener('click' , jump)
+let start = document.querySelector('.start')
+let div = document.querySelector('.inicio')
+let game = document.querySelector('.gameboarder')
+game.addEventListener('click' , jump)
 document.addEventListener('keydown' , jump)
 novamente.addEventListener('click' , novojogo)
+start.addEventListener('click' , startgame)
+
 let loop = setInterval(() => {
     let pipePosition = +window.getComputedStyle(pipe).left.replace('px' , '')
     let marioPosition = +window.getComputedStyle(mario).bottom.replace('px' , '')
@@ -43,4 +48,10 @@ function novojogo() {
     score.innerHTML = 0
 }
 
-
+function startgame() {
+    div.style.display = 'none'
+    pipe.classList.remove('pipe-inicial')
+    pipe.classList.add('pipe-animed')
+    mario.classList.remove('mario-inicial')
+    mario.classList.add('mario-animed')
+}

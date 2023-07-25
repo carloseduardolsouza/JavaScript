@@ -5,13 +5,36 @@
     box-sizing: border-box;
 }
 
+.inicio {
+    width: 200px;
+    height: 120px;
+    z-index: 3;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio > p {
+    margin: 10px;
+}
+
+.inicio > input {
+    padding: 4px;
+}
+
 .sumir {
     display: none;
 }
 
 .reload {
     z-index: 2;
-    float: right;
     position: absolute;
     display: flex ;
     flex-direction: column;
@@ -63,6 +86,13 @@
     left: 80px;
 }
 
+.pipe-inicial {
+    width: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 90%;
+}
+
 .mario-animed {
     width: 100px;
     position: absolute;
@@ -72,6 +102,13 @@
 .mario-stop {
     position: absolute;
     width: 50px;
+    margin-left: 30px;
+    bottom: 0px;
+}
+
+.mario-inicial {
+    position: absolute;
+    width: 100px;
     margin-left: 30px;
     bottom: 0px;
 }
