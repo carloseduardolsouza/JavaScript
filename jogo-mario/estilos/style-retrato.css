@@ -1,8 +1,13 @@
-.pipe {
+.pipe-animed {
     width: 50px;
     position: absolute;
     bottom: 0px;
-    animation: pipe-animation 1.5s infinite linear;
+    animation: pipe-animation 1.4s infinite linear;
+}
+
+.reload {
+    left: 30%;
+    top: 45%;
 }
 
 @keyframes pipe-animation {
