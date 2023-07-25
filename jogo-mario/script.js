@@ -16,8 +16,6 @@ let loop = setInterval(() => {
     if (pipePosition <= 80 && pipePosition > 0 && marioPosition < 60) {
         pipe.classList.remove('pipe-animed')
         pipe.classList.add('pipe-stop')
-        /*pipe.style.left = `${pipePosition}px`
-        mario.style.bottom = `${marioPosition}px`*/
         mario.src = 'imagens/game-over.png'
         mario.classList.remove('mario-animed')
         mario.classList.add('mario-stop')
