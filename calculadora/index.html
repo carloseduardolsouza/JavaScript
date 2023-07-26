@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora </title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Calculadora Dinamica</h1>
+    </header>
     <main>
-        <h1>calculadora</h1>
-        <p>Digite 2 numeros </p>
-        <input type="number" name="" id="valor1" class="numero"> e
-        <input type="number" name="" id="valor2" class="numero"> <br>
-        <input type="button" value="Adição" class="escolha" id="Adiçao">
-        <input type="button" value="subtraçao" class="escolha" id="subtraçao">
-        <input type="button" value="multiplicaçao" class="escolha" id="multiplicaçao">
-        <input type="button" value="divisao" class="escolha" id="divisao"> <br>
-        <p class="result">resultado: <div id="res"></div></p>
+        <p id="viewport" class="viewport"></p>
+        <input type="button" value="1" id="butt1" class="butt" onclick="numero(1)">
+        <input type="button" value="2" id="butt2" class="butt" onclick="numero(2)">
+        <input type="button" value="3" id="butt3" class="butt" onclick="numero(3)">
+        <input type="button" value="CE" id="buttCE" class="butt"> <br>
+        <input type="button" value="4" id="butt4" class="butt" onclick="numero(4)">
+        <input type="button" value="5" id="butt5" class="butt" onclick="numero(5)">
+        <input type="button" value="6" id="butt6" class="butt" onclick="numero(6)">
+        <input type="button" value="-" id="buttme" class="butt" onclick="numero(' - ')"> <br>
+        <input type="button" value="7" id="butt7" class="butt" onclick="numero(7)">
+        <input type="button" value="8" id="butt8" class="butt" onclick="numero(8)">
+        <input type="button" value="9" id="butt9" class="butt" onclick="numero(9)">
+        <input type="button" value="÷" id="buttdiv" class="butt" onclick="numero(' / ')"> <br>
+        <input type="button" value="0" id="butt0" class="butt" onclick="numero(0)">
+        <input type="button" value="+" id="buttma" class="butt" onclick="numero(' + ')">
+        <input type="button" value="x" id="buttx" class="butt" onclick="numero(' * ')">
+        <input type="button" value="=" id="buttig" class="butti">
     </main>
     <footer>
-        <p>&copy; Carlos Eduardo Lourenço Souza</p>
+        <p>&copy; Feito por Carlos Eduardo L.Souza</p>
     </footer>
-    
     <script src="script.js"></script>
 </body>
 </html>

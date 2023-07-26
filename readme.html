@@ -56,8 +56,8 @@
         <h1>Repositorio Readme.github</h1>
         <h2>Projetos Ja prontos</h2>
         <ul>
-            <li><a href="calculadora-dinamica/index.html" target="_blank" rel="noopener noreferrer">Projeto Calculadora Dinamica</a></li>
-            <li><a href="jogo-mario/index.html" target="_blank" rel="noopener noreferrer">Mario jump [JOGO]</a></li>
+            <li><a href="Calculadora/index.html" target="_blank" rel="noopener noreferrer">Projeto Calculadora Dinamica</a></li>
+            <li><a href="Mario-Game/index.html" target="_blank" rel="noopener noreferrer">Mario jump [JOGO]</a></li>
         </ul>
         
         <h2>Projetos parados</h2>
