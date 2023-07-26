@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap'); /*font-family: 'Bungee', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap'); /*font-family: 'Handjet', cursive;*/
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -5,14 +9,31 @@
     box-sizing: border-box;
 }
 
+nav {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    z-index: 4;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: rgba(247, 65, 65, 0.575);
+}
+
+nav > p {
+    color: white;
+}
+
 .inicio {
     width: 200px;
     height: 120px;
     z-index: 3;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 40%;
-    background-color: rgb(207, 207, 207);
+    background-color: rgba(0, 0, 0, 0.418);
     border-radius: 5px;
     margin: 5px;
     box-shadow: 0px 0px 5px black;
@@ -22,10 +43,17 @@
 }
 
 .inicio > p {
+    font-family: 'Handjet', cursive;
+    font-size: 40px;
+    color: rgb(103, 212, 103);
     margin: 10px;
 }
 
 .inicio > input {
+    border-radius: 5px;
+    border: 2px solid black;
+    background-image: linear-gradient(rgb(143, 255, 143) , rgb(73, 172, 73));
+    width: 70px;
     padding: 4px;
 }
 
@@ -34,31 +62,44 @@
 }
 
 .reload {
-    z-index: 2;
+    width: 200px;
+    height: 160px;
+    z-index: 3;
     position: absolute;
-    display: flex ;
+    top: 25%;
+    left: 40%;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    top: 35%;
-    left: 40%;
-    background-color: rgb(207, 207, 207);
-    width: 200px;
-    height: 120px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px black;
 }
 
-.reload > p {
-    margin: 3px;
+.reload > p.over {
+    height: 50px;
+    font-family: 'Bungee', cursive;
+    font-size: 30px;
+    color: red;
+    margin: -3px;
 }
 
-.reload > p.pontoss {
+.reload > p.pontooss {
+    font-family: 'Bungee', cursive;
+    color: white;
     font-size: 15px;
+}
+
+.reload > p.realpont {
+    color: white;
 }
 
 .reload > input {
     padding: 4px;
-
+    border-radius: 5px;
+    border: 2px solid black;
+    background-image: linear-gradient(rgb(143, 255, 143) , rgb(73, 172, 73));
 }
 
 .gameboarder {
@@ -160,19 +201,14 @@
     }
 }
 
-footer {
-    text-align: center;
-    margin: 20px;
-}
-
 p {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 
 }
 
 h3 {
+    font-family: 'Bungee', cursive;
     text-align: center;
     color: rgb(51, 206, 51);
-    margin: 5px;
 }

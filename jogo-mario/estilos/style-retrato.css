@@ -1,3 +1,8 @@
+.inicio {
+    left: 30%;
+    top: 30%;
+}
+
 .pipe-animed {
     width: 50px;
     position: absolute;
@@ -7,7 +12,7 @@
 
 .reload {
     left: 30%;
-    top: 45%;
+    top: 30%;
 }
 
 @keyframes pipe-animation {
