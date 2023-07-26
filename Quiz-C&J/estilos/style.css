@@ -70,6 +70,7 @@
 }
 
 .caixinha {
+    max-width: 100%;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -79,7 +80,7 @@
 ul {
     cursor: pointer;
     margin: 5px;
-    width: 350px;
+    max-width: 350px;
 }
 
 .pag__final {
