@@ -1,0 +1,47 @@
+@paleta
+
+#FF878F
+#FF3B48
+#CC2F39
+#804448
+#801D24
+
+@quiz
+
+1- qual a data do nosso primeiro beijo ?
+
+a) 12/01/2020
+b) 15/02/2021 !
+c) 20/04/2022
+d) 14/04/2021
+
+2- qual sera meu sobrenome ?
+
+a) carlos eduardo souza bahr !
+b) carlos eduardo lourenço bahr
+c) carlos eduardo santos souza
+d) carlos eduardo lourenço santos
+
+3- qual foi o primeiro presente que eu te dei ?
+
+a) potinho com o color eo pingente de coraçao
+b) caixinha que abre dos lados com o ursinho !
+c) vestido
+d) saia
+
+4- qual carro eu mais gosto ?
+
+a) toyota
+b) testa !
+c) jetta
+d) corvete
+
+5- qual meu passa tempo favorito?
+
+a) jogar basquete
+b) treinar
+c) programar
+d) estar com vc !
+
+@conteudo
+
