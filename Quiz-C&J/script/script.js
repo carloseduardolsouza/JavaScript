@@ -20,7 +20,7 @@ function apertou1(key) {
         peg1.style.display = 'none'
         peg2.style.display = 'flex'
     } else {
-        window.alert('nossa amo ,to descepcionado')
+        window.alert('nossa amo ,to decepcionado')
     }
 }
 
@@ -29,7 +29,7 @@ function apertou2(key) {
         peg2.style.display = 'none'
         peg3.style.display = 'flex'
     } else {
-        window.alert('nossa amo ,to descepcionado')
+        window.alert('nossa amo ,to decepcionado')
     }
 }
 
@@ -38,7 +38,7 @@ function apertou3(key) {
         peg3.style.display = 'none'
         peg4.style.display = 'flex'
     } else {
-        window.alert('nossa amo ,to descepcionado')
+        window.alert('nossa amo ,to decepcionado')
     }
 }
 
@@ -47,7 +47,7 @@ function apertou4(key) {
         peg4.style.display = 'none'
         peg5.style.display = 'flex'
     } else {
-        window.alert('nossa amo ,to descepcionado')
+        window.alert('nossa amo ,to decepcionado')
     }
 }
 
@@ -56,6 +56,6 @@ function apertou5(key) {
         peg5.style.display = 'none'
         pag_final.style.display = 'flex'
     } else {
-        window.alert('nossa amo ,to descepcionado')
+        window.alert('nossa amo ,to decepcionado')
     }
 }
