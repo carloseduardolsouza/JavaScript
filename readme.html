@@ -59,6 +59,7 @@
             <li><a href="Calculadora/index.html" target="_blank" rel="noopener noreferrer">Projeto Calculadora Dinamica</a></li>
             <li><a href="Mario-Game/index.html" target="_blank" rel="noopener noreferrer">Mario jump [JOGO]</a></li>
             <li><a href="Quiz-C&J/index.html" target="_blank" rel="noopener noreferrer">QUIZ CAJU</a></li>
+            <li><a href="SnackGame/index.html" target="_blank" rel="noopener noreferrer">Jogo Da Cobrinha</a></li>
         </ul>
         
         <h2>Projetos parados</h2>
