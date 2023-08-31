@@ -150,7 +150,7 @@ const gameLoop = () => {
 const checkOver = () => {
     const head = snack[snack.length -1]
 
-    if(head.x == 0 || head.x == 600 || head.y == 0 || head.y == 600) {
+    if(head.x == -1 || head.x == 601 || head.y == -1 || head.y == 601) {
         gameOver.style.display = "flex"
         clearInterval(loopId)
     }
