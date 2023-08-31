@@ -1,3 +1,5 @@
+const gameOver = document.querySelector(".gameOver")
+
 const canvas = document.querySelector("canvas")
 const ctx = canvas.getContext("2d")
 
@@ -116,6 +118,14 @@ const checkFood = () => {
         food.x = x
         food.y = y
         food.color = randomColor()
+    }
+}
+
+const checkOver = () => {
+    const head = snack[snack.length -1]
+
+    if(head.x == 0 || head.x == 600 || head.y == 0 || head.y == 600) {
+        gameOver.style.display = "flex"
     }
 }
 
