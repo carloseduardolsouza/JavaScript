@@ -45,9 +45,9 @@ button {
     top: 50%;
     left: 50%;
     flex-direction: column;
-    background-color: #00000071;
+    background-color: #ffffff5c;
     border-radius: 10px;
-    box-shadow: 0 0 10 #ffffff5c;
+    box-shadow: 0 0 10 black;
     justify-content: center;
     align-items: center;
 }
