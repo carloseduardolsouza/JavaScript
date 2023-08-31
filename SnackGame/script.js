@@ -1,5 +1,5 @@
 const gameOver = document.querySelector(".gameOver")
-const reload = document.querySelector("button")
+const reload = document.querySelector(".button")
 const point = document.querySelector("span")
 
 const canvas = document.querySelector("canvas")
