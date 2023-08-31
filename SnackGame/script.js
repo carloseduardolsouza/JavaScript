@@ -1,5 +1,6 @@
 const gameOver = document.querySelector(".gameOver")
 const reload = document.querySelector("button")
+const point = document.querySelector("span")
 
 const canvas = document.querySelector("canvas")
 const ctx = canvas.getContext("2d")
@@ -101,6 +102,13 @@ const moveSnack = () => {
     }
 }
 
+const addPoint = () => {
+    const ponto = 0
+    const point = ponto + 10
+    ponto = point
+    point.innerText = point
+}
+
 const checkFood = () => {
     const head = snack[snack.length - 1]
 
@@ -119,6 +127,8 @@ const checkFood = () => {
         food.x = x
         food.y = y
         food.color = randomColor()
+
+        addPoint()
     }
 }
 
