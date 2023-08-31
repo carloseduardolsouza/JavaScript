@@ -35,10 +35,13 @@ button {
     position: absolute;
     max-width: 200px;
     max-height: 90px;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     flex-direction: column;
     background-color: #00000071;
     border-radius: 10px;
     box-shadow: 0 0 10 black;
+    justify-content: center;
+    align-items: center;
 }
