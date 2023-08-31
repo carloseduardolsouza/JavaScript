@@ -139,6 +139,7 @@ const gameLoop = () => {
     drawGrid()
     drawSize()
     checkFood()
+    checkOver()
 
     loopId = setInterval(() => gameLoop(), 250)
 }
