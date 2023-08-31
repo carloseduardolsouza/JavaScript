@@ -1,4 +1,5 @@
 const gameOver = document.querySelector(".gameOver")
+const reload = document.querySelector("button")
 
 const canvas = document.querySelector("canvas")
 const ctx = canvas.getContext("2d")
@@ -163,4 +164,8 @@ document.addEventListener("keydown" , ({key}) => {
     if(key == "ArrowLeft" || key =="a" && direction != "ArrowRight") {
         direction = "ArrowLeft"
     }
+})
+
+reload.addEventListener("click", () => {
+    gameOver.style.display = "none"
 })
