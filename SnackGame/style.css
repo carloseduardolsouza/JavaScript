@@ -14,10 +14,14 @@ body {
 
 canvas {
     background-color: #111;
+    position: relative;
 }
 
 .gameOver {
     display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     flex-direction: column;
     background-color: #00000071;
     border-radius: 10px;
