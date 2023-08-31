@@ -1,16 +1,33 @@
 const canvas = document.querySelector("canvas")
 const ctx = canvas.getContext("2d")
 
+const audio = new Audio("../ascets/audio.mp3")
+
 const tamanho = 30
 
 const snack = [
     {x:150 , y:150},
-    {x:180 , y:150},
-    {x:210 , y:150},
-    {x:240 , y:150}
+    {x:180 , y:150}
 ]
 
 let direction , loopId
+
+const randomNumber = (min , max) => {
+    return Math.round(Math.random() * (max - min) + min)
+}
+
+const randomPosition = () => {
+    const number = randomNumber(0 , canvas.width - tamanho)
+    return Math.round(number / tamanho) * tamanho
+}
+
+const randomColor = () => {
+    const red = randomNumber(0, 255)
+    const green = randomNumber(0, 255)
+    const blue = randomNumber(0, 255)
+
+    return `rgb(${red} , ${green} , ${blue})`
+}
 
 const drawSize = () => {
     ctx.fillStyle = "#7D34C2"
@@ -21,6 +38,40 @@ const drawSize = () => {
 
         ctx.fillRect(position.x , position.y , tamanho , tamanho)
     })
+}
+
+let food = {
+    x: randomPosition(),
+    y: randomPosition(),
+
+    color: randomColor(),
+}
+
+const drawGrid = () => {
+    ctx.lineWidth = 1
+    ctx.strokeStyle = "#191919"
+
+    for(let i = 30; i < canvas.width; i+= 30) {
+        ctx.beginPath()
+        ctx.lineTo(i, 0)
+        ctx.lineTo(i, 600)
+        ctx.stroke()
+
+        ctx.beginPath()
+        ctx.lineTo(0, i)
+        ctx.lineTo(600, i)
+        ctx.stroke()
+    }
+}
+
+const drawFood = () => {
+    const {color , x , y} = food
+
+    ctx.shadowColor = color
+    ctx.shadowBlur = 6
+    ctx.fillStyle = color
+    ctx.fillRect(x , y , tamanho , tamanho)
+    ctx.shadowBlur = 0
 }
 
 const moveSnack = () => {
@@ -47,15 +98,39 @@ const moveSnack = () => {
     }
 }
 
+const checkFood = () => {
+    const head = snack[snack.length - 1]
+
+    if(head.x == food.x && head.y == food.y) {
+        snack.push(head)
+        audio.play()
+
+        let x = randomPosition()
+        let y = randomPosition()
+
+        while(snack.find((position) => position.x == x && position.y == y)) {
+            x = randomPosition()
+            y = randomPosition()
+        }
+
+        food.x = x
+        food.y = y
+        food.color = randomColor()
+    }
+}
+
 const gameLoop = () => {
     clearInterval(loopId)
 
     ctx.clearRect(0,0 , 600,600)
     
     moveSnack()
+    drawFood()
+    drawGrid()
     drawSize()
+    checkFood()
 
-    loopId = setInterval(() => gameLoop(), 120)
+    loopId = setInterval(() => gameLoop(), 250)
 }
 
 gameLoop()
