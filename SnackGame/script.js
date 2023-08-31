@@ -121,15 +121,6 @@ const checkFood = () => {
     }
 }
 
-const checkOver = () => {
-    const head = snack[snack.length -1]
-
-    if(head.x == 0 || head.x == 600 || head.y == 0 || head.y == 600) {
-        gameOver.style.display = "flex"
-        clearInterval(loopId)
-    }
-}
-
 const gameLoop = () => {
     clearInterval(loopId)
 
@@ -143,6 +134,15 @@ const gameLoop = () => {
     checkOver()
 
     loopId = setInterval(() => gameLoop(), 250)
+}
+
+const checkOver = () => {
+    const head = snack[snack.length -1]
+
+    if(head.x == 0 || head.x == 600 || head.y == 0 || head.y == 600) {
+        gameOver.style.display = "flex"
+        clearInterval(loopId)
+    }
 }
 
 gameLoop()
