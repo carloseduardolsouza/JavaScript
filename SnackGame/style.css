@@ -38,6 +38,7 @@ button {
 
 .gameOver {
     display: none;
+    padding: 10px;
     position: absolute;
     max-width: 200px;
     max-height: 90px;
