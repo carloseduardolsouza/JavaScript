@@ -120,6 +120,8 @@ const checkFood = () => {
         food.x = x
         food.y = y
         food.color = randomColor()
+
+        point.innerText += 10
     }
 }
 
