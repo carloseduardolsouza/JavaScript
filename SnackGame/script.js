@@ -126,7 +126,7 @@ const checkOver = () => {
 
     if(head.x == 0 || head.x == 600 || head.y == 0 || head.y == 600) {
         gameOver.style.display = "flex"
-        clearInterval(gameLoop)
+        clearInterval(loopId)
     }
 }
 
