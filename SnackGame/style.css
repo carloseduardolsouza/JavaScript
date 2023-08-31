@@ -36,6 +36,11 @@ p {
     border-radius: 5px;
 }
 
+.material-symbols-outlined {
+    color: black;
+    font-size: 10px;
+}
+
 .gameOver {
     display: none;
     padding: 10px;
