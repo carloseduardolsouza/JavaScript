@@ -102,13 +102,6 @@ const moveSnack = () => {
     }
 }
 
-const addPoint = () => {
-    const ponto = 0
-    const point = ponto + 10
-    ponto = point
-    point.innerText = point
-}
-
 const checkFood = () => {
     const head = snack[snack.length - 1]
 
@@ -127,8 +120,6 @@ const checkFood = () => {
         food.x = x
         food.y = y
         food.color = randomColor()
-
-        addPoint()
     }
 }
 
