@@ -1,6 +1,7 @@
 const gameOver = document.querySelector(".gameOver")
-const reload = document.querySelector(".button")
+const reload = document.querySelector(".botao")
 const point = document.querySelector("span")
+const overPoint = document.querySelector("p")
 
 const canvas = document.querySelector("canvas")
 const ctx = canvas.getContext("2d")
@@ -15,13 +16,14 @@ const snack = [
 ]
 
 let direction , loopId
+let finalscore = 0
 
 const randomNumber = (min , max) => {
     return Math.round(Math.random() * (max - min) + min)
 }
 
 const randomPosition = () => {
-    const number = randomNumber(0 , canvas.width - tamanho)
+    const number = randomNumber(30 , canvas.width - 60)
     return Math.round(number / tamanho) * tamanho
 }
 
@@ -102,6 +104,16 @@ const moveSnack = () => {
     }
 }
 
+const ponto = () => {
+    initscore = Number(point.innerHTML)
+    finalscore = initscore + 10
+
+    point.innerText = finalscore
+
+}
+
+let speed = 230
+
 const checkFood = () => {
     const head = snack[snack.length - 1]
 
@@ -121,7 +133,9 @@ const checkFood = () => {
         food.y = y
         food.color = randomColor()
 
-        point.innerText += 10
+        speed = speed - 5
+
+        ponto()
     }
 }
 
@@ -135,17 +149,18 @@ const gameLoop = () => {
     drawGrid()
     drawSize()
     checkFood()
-    checkOver()
 
-    loopId = setInterval(() => gameLoop(), 250)
-}
-
-const checkOver = () => {
     const head = snack[snack.length -1]
 
-    if(head.x == -1 || head.x == 601 || head.y == -1 || head.y == 601) {
+    if(head.x == 0 || head.x == 600 || head.y == 0 || head.y == 600) {
         gameOver.style.display = "flex"
+        clearInterval(loopId)
+
+        overPoint.innerText = finalscore
+        return
     }
+
+    loopId = setInterval(() => gameLoop(), speed)
 }
 
 gameLoop()
@@ -169,5 +184,21 @@ document.addEventListener("keydown" , ({key}) => {
 })
 
 reload.addEventListener("click", () => {
+    while(snack.length) {
+        snack.pop();
+    }
+
+    snack.push({x:150 , y:150})
+    snack.push({x:180 , y:150})
+
+    direction = ""
+
     gameOver.style.display = "none"
+
+    point.innerHTML = 0
+
+    finalscore = 0
+    speed = 230
+
+    gameLoop()
 })

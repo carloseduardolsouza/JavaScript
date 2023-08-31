@@ -30,24 +30,25 @@ h2 {
 
 p {
     color: white;
+    font-size: 30px;
 }
 
 .botao {
     padding: 10px;
+    margin: 10px;
     border-radius: 5px;
 }
 
 .material-symbols-outlined {
     color: black;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .gameOver {
     display: none;
-    padding: 10px;
+    padding: 20px;
     position: absolute;
     max-width: 200px;
-    max-height: 90px;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -57,4 +58,17 @@ p {
     box-shadow: 0 0 10 black;
     justify-content: center;
     align-items: center;
+}
+
+.propiedades {
+    background-color: #ffffff82;
+    padding: 10px;
+    position: absolute;
+    left: 5%;
+    border-radius: 10px;
+
+}
+
+.propiedades > button {
+    padding: 5px;
 }
