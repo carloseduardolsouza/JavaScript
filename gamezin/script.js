@@ -7,6 +7,7 @@ let ação = 1
 
 let posEnemies = []
 let posTiro = []
+let posNavX
 
 let tiroLoop , loopId
 
@@ -18,6 +19,7 @@ const drawNav = (posX="350") => {
     ctx.clearRect(0,500 , 700,700)
     ctx.fillStyle = "blue"
     ctx.fillRect(posX, 500 ,size , size)
+    posNavX = posX
 }
 
 const drawEnemies = () => {
@@ -32,6 +34,15 @@ const drawEnemies = () => {
             posY = posY +7
             posEnemies[0] = posX
             posEnemies[1] = posY
+            if(posY >= 500) {
+                ctx.clearRect(0,500 , 700,700)
+                ctx.fillStyle = "red"
+                ctx.fillRect(posX, posY , 30, 30)
+                posY = posY +7
+                posEnemies[0] = posX
+                posEnemies[1] = posY
+                drawNav(posNavX)
+            }
         } if (posY >= 700) {
             ctx.clearRect(0,0 , 700,500)
             posY = 0
@@ -66,7 +77,7 @@ const tiro = (posX) => {
 }
 
 const checkTiro = () => {
-    if(posTiro[1] >= posEnemies[1]) {
+    if(posTiro[1] = posEnemies[1]) {
         clearInterval(tiroLoop)
         console.log("acertou")
     } else return
@@ -87,12 +98,8 @@ canvas.addEventListener("click", (event) => {
 
 const gameLoop = () => {
     clearInterval(loopId)
-
     checkTiro()
-
     loopId = setInterval(() => gameLoop(), 500)
 }
 
 gameLoop()
-drawNav()
-drawEnemies()
