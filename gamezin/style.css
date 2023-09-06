@@ -1,0 +1,12 @@
+body {
+    background-color: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+canvas {
+    background-color: #1b1b1b;
+    box-shadow: 5 5 10 white;
+}
