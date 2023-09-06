@@ -5,6 +5,11 @@ const size = 30
 
 let ação = 1
 
+let posEnemies = []
+let posTiro = []
+
+let tiroLoop , loopId
+
 const randomNumber = (min , max) => {
     return Math.round(Math.random() * (max - min) + min)
 }
@@ -25,9 +30,13 @@ const drawEnemies = () => {
             ctx.fillStyle = "red"
             ctx.fillRect(posX, posY , 30, 30)
             posY = posY +7
+            posEnemies[0] = posX
+            posEnemies[1] = posY
         } if (posY >= 700) {
             ctx.clearRect(0,0 , 700,500)
             posY = 0
+            posEnemies[0] = 0
+            posEnemies[1] = 0
             clearInterval(enemiesLoop)
         }
     }, 20)
@@ -36,20 +45,31 @@ const drawEnemies = () => {
 const tiro = (posX) => {
     posY = 490
 
-    const tiroLoop = setInterval(() => {
+    tiroLoop = setInterval(() => {
         if(posY > 0) {
             ctx.clearRect(0,0 , 700,500)
             ctx.fillStyle = "white"
             ctx.fillRect(posX, posY , 10, 10)
             posY = posY -7
+            posTiro[0] = posX
+            posTiro[1] = posY
         } if(posY <= 0) {
             ctx.clearRect(0,0 , 700,500)
             posY = 500
+            posTiro[0] = 0
+            posTiro[1] = 0
             ação = 1
             clearInterval(tiroLoop)
         }
     }, 1)
 
+}
+
+const checkTiro = () => {
+    if(posTiro[1] >= posEnemies[1]) {
+        clearInterval(tiroLoop)
+        console.log("acertou")
+    } else return
 }
 
 canvas.addEventListener("mousemove", (event) => {
@@ -65,5 +85,14 @@ canvas.addEventListener("click", (event) => {
     }
 })
 
-drawEnemies()
+const gameLoop = () => {
+    clearInterval(loopId)
+
+    checkTiro()
+
+    loopId = setInterval(() => gameLoop(), 500)
+}
+
+gameLoop()
 drawNav()
+drawEnemies()
