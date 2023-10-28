@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #292929;
+}
+
+.space_game {
+    background-color: #171717;
+    width: 450px;
+    height: 450px;
+}
+
+.nave_you {
+    position: absolute;
+    bottom: 5px;
+    left: 1px;
+    Width: 40px;
+}
