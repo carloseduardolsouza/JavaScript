@@ -13,6 +13,7 @@ body {
 }
 
 .space_game {
+    position: relative;
     background-color: #171717;
     width: 450px;
     height: 450px;
